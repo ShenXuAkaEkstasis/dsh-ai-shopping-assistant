@@ -1,0 +1,40 @@
+{
+  "name": "dsh-ai-shopping-assistant",
+  "version": "2.0.1-dsh.2",
+  "description": "DeepSeek Harness shopping decision plugin for candidate ranking, realizable price, merchant/review evidence and source-quality risk.",
+  "type": "module",
+  "main": "index.js",
+  "exports": {
+    ".": "./index.js",
+    "./cordis.patch.yml": "./cordis.patch.yml",
+    "./package.json": "./package.json"
+  },
+  "files": [
+    "index.js",
+    "cordis.patch.yml",
+    "README.md",
+    "README.zh-CN.md",
+    "SECURITY.md",
+    "LICENSE.md",
+    "CHANGELOG.md",
+    "docs"
+  ],
+  "engines": {
+    "node": "^22.19.0 || >=24.0.0"
+  },
+  "keywords": [
+    "deepseek-harness",
+    "dsh-plugin",
+    "shopping-assistant",
+    "shopping",
+    "product-comparison",
+    "price-comparison",
+    "agent-tool"
+  ],
+  "dsh": {
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    }
+  },
+  "license": "SEE LICENSE IN LICENSE.md"
+}
